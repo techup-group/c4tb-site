@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3394537546">
+    <data-source source="LOCAL" name="Rails c4h-brigade-site: development" uuid="a4a9e56e-c8d9-41aa-9fd4-28c08142faf3">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails c4h-brigade-site: production" uuid="7f851dfa-4219-4041-9f51-bfa13e0619e5">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:db_production</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

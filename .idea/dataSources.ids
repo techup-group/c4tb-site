@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails c4h-brigade-site: development" uuid="a4a9e56e-c8d9-41aa-9fd4-28c08142faf3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails c4h-brigade-site: production" uuid="7f851dfa-4219-4041-9f51-bfa13e0619e5">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
