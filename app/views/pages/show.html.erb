@@ -1,17 +1,7 @@
-<div class="container">
-  <p id="notice"><%= notice %></p>
 
-  <p>
-    <strong>Title:</strong>
-    <%= @page.title %>
-  </p>
-
-  <p>
-    <strong>Body:</strong>
-    <%== @page.body %>
-  </p>
-
-  <%= link_to 'Edit', edit_page_path(@page) %> |
-  <%= link_to 'Back', pages_path %>
-</div>
+<%== @page.body %>
+<% if user_signed_in? %>
+    <%= link_to 'Edit', edit_page_path(@page) %> |
+    <%= link_to 'Back', pages_path %>
+<% end %>
 

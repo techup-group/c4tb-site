@@ -11,13 +11,21 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, class: 'form-control', disabled: @page.required %>
   </div>
-  <div class="field">
+  <div class="form-group">
+    <%= f.label :path %><br>
+    <div class="input-group">
+      <div class="input-group-addon"><%= pages_url + '/' %></div>
+      <%= f.text_field :path, class: 'form-control', disabled: @page.required %>
+    </div>
+
+  </div>
+  <div class="form-group">
     <%= f.label :body %><br>
-    <%= f.text_field :body %>
+    <%= f.cktext_area :body %>
   </div>
   <div class="actions">
     <%= f.submit %>
