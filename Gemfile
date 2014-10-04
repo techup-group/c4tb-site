@@ -35,6 +35,7 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'ckeditor'
 gem 'rails_admin'
+gem 'rails_12factor', group: :production
 
 
 # Use ActiveModel has_secure_password

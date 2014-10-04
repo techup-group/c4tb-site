@@ -9,8 +9,8 @@
     </data-source>
     <data-source source="LOCAL" name="Rails c4h-brigade-site: production" uuid="54ece13e-92fe-4a32-a87c-63660759392e">
       <driver-ref>postgresql</driver-ref>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:db_production</jdbc-url>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
       <libraries />
     </data-source>
   </component>
