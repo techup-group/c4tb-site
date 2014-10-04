@@ -11,16 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141002235637) do
+ActiveRecord::Schema.define(version: 20141004042436) do
 
   create_table "pages", force: true do |t|
     t.string   "title"
-    t.string   "body"
+    t.text     "body",       limit: 255
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "required",   default: false
-    t.string   "layout",     default: "application"
+    t.boolean  "required",               default: false
+    t.string   "layout",                 default: "application"
     t.string   "path"
   end
 
