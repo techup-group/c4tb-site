@@ -1,0 +1,18 @@
+<%= link_to 'New Post', new_post_path, class: 'btn btn-xs btn-info' %>
+<% @posts.each do |post| %>
+    <div class="page-header">
+      <h1><%= link_to post.title, post %></h1>
+      <small>Author: <%= link_to post.user.name, '#' %></small>
+      <small>posted <%= time_ago_in_words post.created_at %> ago</small>
+    </div>
+    <div>
+      <%== post.body %>
+    </div>
+    <%= link_to 'Show', post %> |
+    <%= link_to 'Edit', edit_post_path(post) %> |
+    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <hr>
+<% end %>
+
+<br>
+
