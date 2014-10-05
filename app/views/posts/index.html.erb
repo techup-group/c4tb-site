@@ -1,4 +1,4 @@
-<%= link_to 'New Post', new_post_path, class: 'btn btn-xs btn-info' %>
+<%= link_to 'New Post', new_post_path, class: 'btn btn-xs btn-primary' %>
 <% @posts.each do |post| %>
     <div class="page-header">
       <h1><%= link_to post.title, post %></h1>
@@ -11,7 +11,7 @@
     <%= link_to 'Show', post %> |
     <%= link_to 'Edit', edit_post_path(post) %> |
     <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-    <hr>
+
 <% end %>
 
 <br>

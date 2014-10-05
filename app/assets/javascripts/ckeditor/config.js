@@ -3,7 +3,7 @@ CKEDITOR.config.extraPlugins = 'codemirror,autogrow,showblocks,listblock';
 
 CKEDITOR.config.autoGrow_onStartup = true;
 
-CKEDITOR.config.contentsCss = '/assets/bootstrap-flatly.css?body=1'
+CKEDITOR.config.contentsCss = '/assets/bootstrap.css?body=1'
 
 CKEDITOR.config.codemirror = {
 
