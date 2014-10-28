@@ -31,6 +31,7 @@
         <% if user_signed_in? %>
             <%= nav_dropdown 'Admin' do %>
                 <%= nav_link 'Pages', pages_url %>
+                <%= nav_link 'Projects', projects_url %>
                 <%= nav_link 'Advanced', '/admin' %>
             <% end %>
         <% end %>

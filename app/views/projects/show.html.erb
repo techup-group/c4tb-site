@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+  <table class="table table-bordered table-striped">
+    <tbody>
+      <tr>
+        <td colspan="2"><strong><%= @project.name %></strong></td>
+      </tr>
+      <tr>
+        <td><strong>Description:</strong></td>
+        <td><%= @project.description %></td>
+      </tr>
+      <tr>
+        <td><strong>Link URL:</strong></td>
+        <td><%= link_to @project.link_url, @project.link_url %></td>
+      </tr>
+      <tr>
+        <td><strong>Code URL:</strong></td>
+        <td><%= link_to @project.code_url, @project.code_url %></td>
+      </tr>
+      <tr>
+        <td><strong>Project Type:</strong></td>
+        <td><%= @project.type %></td>
+      </tr>
+      <tr>
+        <td><strong>Categories:</strong></td>
+        <td><%= @project.categories %></td>
+      </tr>
+    </tbody>
+  </table>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
