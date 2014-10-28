@@ -15,12 +15,12 @@ ActiveRecord::Schema.define(version: 20141005152656) do
 
   create_table "pages", force: true do |t|
     t.string   "title"
-    t.text     "body",       limit: 255
+    t.text     "body"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "required",               default: false
-    t.string   "layout",                 default: "application"
+    t.boolean  "required",   default: false
+    t.string   "layout",     default: "application"
     t.string   "path"
   end
 

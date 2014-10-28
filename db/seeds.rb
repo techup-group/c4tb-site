@@ -5,3 +5,19 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+result = Page.find_or_create_by(
+    path: 'home',
+    title: 'Home',
+    required: true
+)
+result = User.create(
+    email: 'admin@admin.com',
+    name: 'admin',
+    password: 'password'
+)
+
+if result
+  puts 'Seeding successful'
+else
+  puts 'seeding failed'
+end
