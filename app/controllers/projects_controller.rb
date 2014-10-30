@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
-
+  append_before_action :authenticate_user!, only: [:edit, :create, :new, :update, :destroy]
   # GET /projects
   # GET /projects.json
   def index
