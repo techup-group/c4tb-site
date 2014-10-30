@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :projects
 
-  resources :posts
+  resources :posts, :path => 'news'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
