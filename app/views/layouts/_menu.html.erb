@@ -36,6 +36,8 @@
                 <%= nav_link 'Advanced', '/admin' %>
                 <%= nav_link 'Logout', destroy_user_session_path, :method => :delete %>
             <% end %>
+        <% else %>
+            <%= nav_link 'Sign In', new_user_session_url %>
         <% end %>
       </ul>
     </div>
