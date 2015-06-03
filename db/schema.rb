@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20141028144908) do
 
-  create_table "pages", force: true do |t|
+  create_table "pages", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
     t.integer  "user_id"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20141028144908) do
     t.string   "path"
   end
 
-  create_table "posts", force: true do |t|
+  create_table "posts", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "title"
     t.string   "body"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20141028144908) do
 
   add_index "posts", ["user_id"], name: "index_posts_on_user_id"
 
-  create_table "projects", force: true do |t|
+  create_table "projects", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
     t.string   "link_url"
@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 20141028144908) do
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
