@@ -21,7 +21,14 @@
       <div class="input-group-addon"><%= pages_url + '/' %></div>
       <%= f.text_field :path, class: 'form-control', disabled: @page.required %>
     </div>
-
+  </div>
+  <div class="form-group">
+    <%= f.label :menu_route %><br>
+    <%= f.text_field :menu_route, class: 'form-control', disabled: @page.required %>
+  </div>
+  <div class="form-group">
+    <%= f.label :is_visible %><br>
+    <%= f.check_box :is_visible, disabled: @page.required %>
   </div>
   <div class="form-group">
     <%= f.label :body %><br>

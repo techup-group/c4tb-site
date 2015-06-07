@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141208025401) do
+ActiveRecord::Schema.define(version: 20150607183107) do
 
   create_table "ckeditor_assets", force: :cascade do |t|
     t.string   "data_file_name",               null: false
@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(version: 20141208025401) do
     t.boolean  "required",   default: false
     t.string   "layout",     default: "application"
     t.string   "path"
+    t.string   "menu_route"
+    t.boolean  "is_visible"
   end
 
   create_table "posts", force: :cascade do |t|

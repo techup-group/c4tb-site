@@ -7,6 +7,8 @@ class Page < ActiveRecord::Base
       field :path
       field :layout
       field :required, :boolean
+      field :is_visible, :boolean
+      field :menu_route, :string
       field :user
       field :body, :ck_editor
 
