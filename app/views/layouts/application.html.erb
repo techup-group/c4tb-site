@@ -11,10 +11,15 @@
 <body>
 <!-- NAVBAR
    ================================================== -->
-
-<%= render 'layouts/menu' %>
-
 <div class="container">
+  <div class="masthead">
+  <!-- placeholder for randomImages -->
+    <%= image_tag 'mastheads/skywayShortSmall2_02.png' %>
+    <!--<img src="imgs/skywayShortSmall2_01.png" id="masthead" alt="one third of the sunshine skyway bridge">-->
+  </div>
+  <%= render 'layouts/menu' %>
+
+
   <%= yield %>
 </div>
 
