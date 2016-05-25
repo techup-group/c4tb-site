@@ -40,6 +40,8 @@ gem 'devise'
 gem 'ckeditor'
 gem 'rails_admin'
 gem 'rails_12factor', group: :production
+gem 'ckeditor-imgur'
+gem 'carrierwave-dropbox'
 
 
 # Use ActiveModel has_secure_password
