@@ -70,7 +70,7 @@ CKEDITOR.config.codemirror = {
     // Whether or not to show the showAutoCompleteButton button on the toolbar
     showAutoCompleteButton: true
 };
- 
+
 CKEDITOR.editorConfig = function( config )
 {
     // Define changes to default configuration here. For example:
