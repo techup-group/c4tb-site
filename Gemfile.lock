@@ -62,7 +62,7 @@ GEM
     coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.1.1)
+    coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
     devise (4.4.3)
@@ -201,8 +201,9 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (1.4.1)
-    turbolinks (2.5.3)
-      coffee-rails
+    turbolinks (5.1.1)
+      turbolinks-source (~> 5.1)
+    turbolinks-source (5.1.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     tzinfo-data (1.2018.5)
